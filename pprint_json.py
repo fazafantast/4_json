@@ -15,10 +15,10 @@ def pretty_print_json(data):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('filepath', type=str)
-    args = parser.parse_args()
+    arguments = parser.parse_args()
 
     if os.path.exists(args.filepath):
-        json_data = load_data(args.filepath)
+        json_data = load_data(arguments.filepath)
         pretty_print_json(json_data)
     else:
-        print('No such file or directory: \'{}\''.format(args.filepath))
+        print('No such file or directory: \'{}\''.format(arguments.filepath))

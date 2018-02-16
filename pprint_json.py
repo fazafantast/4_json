@@ -17,7 +17,7 @@ if __name__ == '__main__':
     parser.add_argument('filepath', type=str)
     arguments = parser.parse_args()
 
-    if os.path.exists(args.filepath):
+    if os.path.exists(arguments.filepath):
         json_data = load_data(arguments.filepath)
         pretty_print_json(json_data)
     else:

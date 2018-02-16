@@ -1,18 +1,24 @@
 # Prettify JSON
 
-[TODO. There will be project description]
-
-# Quickstart
-
-[TODO]
+Script that takes the input to a file with arbitrary data in JSON format and outputs its content to the console in an easy-to-read form: adds line breaks, left padding and spaces.
+ 
+ # Quickstart
 
 Example of script launch on Linux, Python 3.5:
 
 ```bash
 
+ 
 $ python pprint_json.py <path to file>
-# TODO add output example
-
+[
+    {
+        "Number": 1,
+        "Cells": {
+            ..........................
+        },
+        "Id": "a16c8154-09d8-4207-8e13-cb8db654e95c"
+    }
+]
 ```
 
 # Project Goals
